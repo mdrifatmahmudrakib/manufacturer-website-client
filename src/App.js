@@ -14,6 +14,7 @@ import AddAReview from './Pages/Home/AddAReview/AddAReview';
 import Footer from './Pages/Shared/Footer/Footer';
 import MyProfile from './Pages/Dashboard/MyProfile/MyProfile';
 import NotFound from './Pages/Shared/NotFound/NotFound';
+import Users from './Pages/Dashboard/Users/Users';
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
 
           <Route index element={<MyOrder></MyOrder>}></Route>
           <Route path="addnewreview" element={<AddNewReview></AddNewReview>}></Route>
+          <Route path="users" element={<Users></Users>}></Route>
           <Route path="myprofile" element={<MyProfile></MyProfile>}></Route>
 
 
