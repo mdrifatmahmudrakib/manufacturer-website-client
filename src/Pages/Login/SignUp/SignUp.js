@@ -6,6 +6,8 @@ import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import Loading from '../../Shared/Loading/Loading';
 
+import useToken from '../../../../src/hooks/useToken';
+
 
 const SignUp = () => {
     const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
@@ -21,6 +23,15 @@ const SignUp = () => {
     const [updateProfile, updating, updateError] = useUpdateProfile(auth);
 
     const navigate = useNavigate();
+    //user info save krbo
+    const [token] = useToken(user || gUser);
+
+    if (token) {
+        navigate('/appoinment');
+    }
+
+
+
 
     let signInError;
     if (error || gError || updating) {
