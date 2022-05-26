@@ -18,7 +18,7 @@ const Login = () => {
     ] = useSignInWithEmailAndPassword(auth);
 
 
-    const [token] = useToken(user || gUser); // token
+    // const [token] = useToken(user || gUser); // token
 
 
 
@@ -29,17 +29,17 @@ const Login = () => {
     const location = useLocation();
     let from = location.state?.from?.pathname || "/";
 
-    // useEffect(() => {
-    //     if (gUser || user) {
-    //         navigate(from, { replace: true });
-    //     }
-    // }, [user, gUser, from, navigate])
-    //effect with token
     useEffect(() => {
-        if (token) {
+        if (gUser || user) {
             navigate(from, { replace: true });
         }
-    }, [token, from, navigate])
+    }, [user, gUser, from, navigate])
+    //effect with token
+    // useEffect(() => {
+    //     if (token) {
+    //         navigate(from, { replace: true });
+    //     }
+    // }, [token, from, navigate])
 
 
     if (error || gError) {
