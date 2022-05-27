@@ -7,14 +7,17 @@ import Login from './Pages/Login/Login';
 import SignUp from './Pages/Login/SignUp/SignUp';
 import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
 import Dashboard from './Pages/Dashboard/Dashboard';
-import MyOrder from './Pages/Dashboard/MyOrder/MyOrder';
-import Reviews from './Pages/Home/Reviews/Reviews';
-import AddNewReview from './Pages/Dashboard/AddNewReview/AddNewReview';
+
+
 import AddAReview from './Pages/Home/AddAReview/AddAReview';
 import Footer from './Pages/Shared/Footer/Footer';
 import MyProfile from './Pages/Dashboard/MyProfile/MyProfile';
 import NotFound from './Pages/Shared/NotFound/NotFound';
 import Users from './Pages/Dashboard/Users/Users';
+
+import AllOrders from './Pages/Dashboard/AllOrders/AllOrders';
+import AddProduct from './Pages/Dashboard/AddProduct/AddProduct';
+import MyOrders from './Pages/Dashboard/MyOrders/MyOrders';
 
 
 function App() {
@@ -38,10 +41,14 @@ function App() {
 
         } >
 
-          <Route index element={<MyOrder></MyOrder>}></Route>
-          <Route path="addnewreview" element={<AddNewReview></AddNewReview>}></Route>
+
+          <Route index element={<MyProfile></MyProfile>}></Route>
           <Route path="users" element={<Users></Users>}></Route>
-          <Route path="myprofile" element={<MyProfile></MyProfile>}></Route>
+
+          <Route path="allorders" element={<AllOrders />}></Route>
+          <Route path="myorders" element={<MyOrders></MyOrders>}></Route>
+          <Route path="addreview" element={<AddAReview></AddAReview>}></Route>
+          <Route path="addproduct" element={<AddProduct />}></Route>
 
 
         </Route>

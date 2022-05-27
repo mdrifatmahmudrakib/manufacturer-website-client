@@ -23,12 +23,11 @@ const SignUp = () => {
     const [updateProfile, updating, updateError] = useUpdateProfile(auth);
 
     const navigate = useNavigate();
+
+
     //user info save krbo
     const [token] = useToken(user || gUser);
 
-    if (token) {
-        navigate('/appoinment');
-    }
 
 
 
@@ -43,7 +42,7 @@ const SignUp = () => {
         await createUserWithEmailAndPassword(data.email, data.password)
         await updateProfile({ displayName: data.name });
         console.log('updated');
-        navigate('/home')
+        // navigate('/home')
     }
 
     if (loading || gLoading || updating) {
@@ -52,6 +51,11 @@ const SignUp = () => {
     if (gUser || user) {
         console.log(gUser || user)
     }
+
+    if (token) {
+        navigate('/home');
+    }
+
 
     return (
         <div className='flex h-screen justify-center items-center'>
