@@ -18,6 +18,9 @@ import Users from './Pages/Dashboard/Users/Users';
 import AllOrders from './Pages/Dashboard/AllOrders/AllOrders';
 import AddProduct from './Pages/Dashboard/AddProduct/AddProduct';
 import MyOrders from './Pages/Dashboard/MyOrders/MyOrders';
+import ManageProducts from './Pages/Dashboard/ManageProducts/ManageProducts';
+import AddNewReview from './Pages/Dashboard/AddNewReview/AddNewReview';
+import Blog from './Pages/Blog/Blog';
 
 
 function App() {
@@ -27,6 +30,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
+        <Route path="blog" element={<Blog />} />
         <Route path="login" element={<Login />} />
         <Route path="signup" element={<SignUp />} />
         <Route path="addreview" element={<AddAReview />}></Route>
@@ -46,8 +50,10 @@ function App() {
           <Route path="users" element={<Users></Users>}></Route>
 
           <Route path="allorders" element={<AllOrders />}></Route>
+          <Route path="manageproducts" element={<ManageProducts></ManageProducts>}></Route>
           <Route path="myorders" element={<MyOrders></MyOrders>}></Route>
-          <Route path="addreview" element={<AddAReview></AddAReview>}></Route>
+          {/* <Route path="addreview" element={<AddAReview></AddAReview>}></Route> */}
+          <Route path="addreview" element={<AddNewReview></AddNewReview>}></Route>
           <Route path="addproduct" element={<AddProduct />}></Route>
 
 

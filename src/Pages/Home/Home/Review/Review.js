@@ -11,11 +11,11 @@ const Review = ({ review }) => {
                 </div>
                 <div>
                     <h2 className="text-gray-800 text-3xl font-semibold">{name}</h2>
-                    <p className="mt-2 text-gray-600">{content.slice(0, 100)}</p>
+                    {/* <p className="mt-2 text-gray-600">{content.slice(0, 100)}</p> */}
                 </div>
-                <div className="flex justify-end mt-4">
+                {/* <div className="flex justify-end mt-4">
                     <p className="text-xl font-medium text-secondary">Ratting: <span className='text-primary'>{rating}</span></p>
-                </div>
+                </div> */}
             </div>
         </div>
     );

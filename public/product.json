@@ -5,8 +5,7 @@
         "price": 50,
         "short_description": "The rotatable structure in palm size that allows you to toss in a backpack conveniently, an extendable grip made for exploring bigger vision, and a handy App - ZY Cami, for making videos rock everybody! Meet Smooth X and explore your EXTRA life! No longer have to choose between high-quality video and lightweight travel. Get both at once! A phone-size rotating gimbal weighing only 246g easily fits into your bag even pocket and provides surprisingly stable footage with your phone. ",
         "quantity": 120,
-        "email": "bowersramsey@plasmos.com",
-        "phone": "+1 (952) 524-2973"
+        "minimum_quantity": 50
     },
     {
         "name": "Zhiyun Smooth X Combo Foldable Smartphone Gimbal",
@@ -14,8 +13,7 @@
         "price": 60,
         "short_description": "Zhiyun Smooth X Combo Gimbal is a tiny, foldable 2-axis gimbal for smartphones that weighs only 246g and fits neatly into a backpack – or even a pocket. SMOOTH-X Combo now offers additional ways to capture and share tales with the exclusive ZY Cami app. With the foldable SMOOTH-X Combo, you can unfold the globe it's a whole new take on the gimbal.",
         "quantity": 130,
-        "email": "norriskidd@plasmos.com",
-        "phone": "+1 (827) 553-3868"
+        "minimum_quantity": 50
     },
     {
         "name": "Gudsen Moza Mini S Gimbal",
@@ -23,8 +21,7 @@
         "price": 65,
         "short_description": "Featuring a newly upgraded sleek design, the Mini-S is the successor of the popular Mini-S Essential. While inheriting the foldable and portable design of Mini-S Essential, the Mini-S adds an extension pole that can be easily retracted or extended when shooting. The Mini-S offers video creators a wider variety of shooting angles for all kinds of filming.",
         "quantity": 150,
-        "email": "gabriellemelendez@plasmos.com",
-        "phone": "+1 (967) 486-2233"
+        "minimum_quantity": 50
     },
     {
         "name": "Zhiyun Smooth-Q3 Combo 3-Axis Gimbal Stabilizer",
@@ -32,8 +29,7 @@
         "price": 90,
         "short_description": "The Zhiyun Smooth-Q3 Combo Gimbal is Smartphone Gimbal that comes with a whole-new clearer button layout that better suits when using single-handed. Three-axis structure for surprisingly stable and smooth footage. It comes with Integrated rotatable fill light with a touch button to light you up from all angles with three adjustable brightness levels.",
         "quantity": 165,
-        "email": "peggyhess@plasmos.com",
-        "phone": "+1 (980) 436-2488"
+        "minimum_quantity": 50
     },
     {
         "name": "Zhiyun Smooth Q2 Handheld Smartphone Gimbal",
@@ -41,8 +37,7 @@
         "price": 110,
         "short_description": "Zhiyun Smooth Q2 is The Truly Pocket-Size Smartphone Gimbal, that has come a long way in exploring the ultimate compact form factor without any compromise in functionality. The Smooth Q2 engaging gimbal ready to work without any fuss, the ultimate smartphone gimbal redefining the concept of compactness. ",
         "quantity": 170,
-        "email": "margiegriffin@plasmos.com",
-        "phone": "+1 (869) 468-3577"
+        "minimum_quantity": 50
     },
     {
         "name": "Zhiyun CRANE-M3 3-Axis Handheld Gimbal Stabilizer",
@@ -50,7 +45,6 @@
         "price": 200,
         "short_description": "The best way to describe the CRANE-M3 is portable yet professional with compatibility. Gripping and user experience are improved because of the compact body design and optimized axis arm construction. CRANE-M3 provides an amazing filming experience without the need for additional equipment thanks to its brand new dual-color temperature lighting and professional audio solution.",
         "quantity": 200,
-        "email": "margiegriffin@plasmos.com",
-        "phone": "+1 (869) 468-3577"
+        "minimum_quantity": 50
     }
 ]
