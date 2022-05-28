@@ -9,6 +9,8 @@ const UserRow = ({ user, refetch }) => {
             method: 'PUT',
             headers: {
                 authorization: `Bearer ${localStorage.getItem('accessToken')}`
+
+
             }
         })
             .then(res => {
@@ -20,7 +22,7 @@ const UserRow = ({ user, refetch }) => {
             .then(data => {
                 if (data.modifiedCount > 0) {
                     refetch();
-                    toast.success('done');
+                    toast.success(`Successfully made an admin`);
                 }
 
             })

@@ -7,9 +7,10 @@ const HomeProduct = () => {
     return (
         <div className="px-12">
             <div>
-                <h3 className='m-10 text-center text-2xl font-bold'>All</h3>
+                <h3 className='m-10 text-primary text-center text-4xl font-bold'>Best Selling Products
+                </h3>
             </div>
-            <div className="grid grid-cols-3 gap-10">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
                 {products.map((product) => (
                     <ShowProduct
                         product={product}

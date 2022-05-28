@@ -1,19 +1,49 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import AllProductData from '../../../hooks/AllProductData';
 
-const DeleteProduct = ({ product }) => {
-    const { name, price, quantity, minimum_quantity } =
-        product;
+const DeleteProduct = ({ product, refetch }) => {
+    const [products, setProduct] = AllProductData();
+    const navigate = useNavigate();
+
+    const handleDelete = id => {
+        console.log(id);
+        const proceed = window.confirm('Are you Sure?');
+        if (proceed) {
+            const url = `http://localhost:5000/product/${id}`;
+            console.log(url)
+            fetch(url, {
+                method: 'DELETE',
+                headers: {
+                    authorization: `Bearer ${localStorage.getItem('accessToken')}`
+
+                }
+            })
+
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+
+                    const remaining = products.filter(product => product._id !== id)
+                    setProduct(remaining);
+                    refetch();
+                })
+
+        }
+    }
+    // const { name, price, quantity, minimum_quantity } =
+    //     product;
     return (
         <tr>
 
-            <td>{name}</td>
-            <td>${price}</td>
-            <td>{minimum_quantity}</td>
+            <td>{product.name}</td>
+            <td>${product.price}</td>
+            <td>{product.minimum_quantity}</td>
 
-            <td>{quantity}</td>
+            <td>{product.quantity}</td>
 
 
-            <td><button class="btn btn-xs">Delete Item</button></td>
+            <td><button onClick={() => handleDelete(product._id)} class="btn btn-xs">Delete Item</button></td>
         </tr>
     );
 };

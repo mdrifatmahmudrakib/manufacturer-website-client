@@ -2,8 +2,9 @@ import React from 'react';
 import AllProductData from '../../../hooks/AllProductData';
 import DeleteProduct from './DeleteProduct';
 
-const ManageProducts = () => {
+const ManageProducts = ({ refetch }) => {
     const [products] = AllProductData();
+
     return (
         <div>
             <h2 className="text-2xl">All Products</h2>
@@ -25,6 +26,7 @@ const ManageProducts = () => {
                             <DeleteProduct
                                 product={product}
                                 key={product._id}
+                                refetch={refetch}
                             ></DeleteProduct>
                         ))}
                     </tbody>
