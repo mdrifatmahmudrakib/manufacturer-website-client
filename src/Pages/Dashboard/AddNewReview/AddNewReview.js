@@ -11,7 +11,7 @@ const AddNewReview = () => {
     // const [user] = useAuthState(auth);
 
     // //load user
-    const { data, isLoading } = useQuery('user', () => fetch(`http://localhost:5000/reviews`, {
+    const { data, isLoading } = useQuery('user', () => fetch(`https://mighty-beach-10745.herokuapp.com/reviews`, {
         method: 'GET',
         headers: {
             'authorization': `Bearer ${localStorage.getItem("accessToken")}`
@@ -33,7 +33,7 @@ const AddNewReview = () => {
     //         rating,
     //         feedback
     //     }
-    //     fetch('http://localhost:5000/reviews', {
+    //     fetch('https://mighty-beach-10745.herokuapp.com/reviews', {
     //         method: 'POST',
     //         headers: {
     //             'content-type': 'application/json',
@@ -62,7 +62,7 @@ const AddNewReview = () => {
 
         }
 
-        fetch('http://localhost:5000/reviews', {
+        fetch('https://mighty-beach-10745.herokuapp.com/reviews', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',

@@ -21,7 +21,7 @@ This Website is about Manufacturer Website for Gimbal
 
 ### `Live Website Link`
 
- [https://laptop-warehouse-69a42.web.app](https://laptop-warehouse-69a42.web.app) 
+ [https://gimbal-manufacturer-website.web.app/](https://gimbal-manufacturer-website.web.app/) 
 
 
 ### `Client Side Code`

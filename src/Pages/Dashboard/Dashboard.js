@@ -13,7 +13,7 @@ const Dashboard = () => {
             <div class="drawer-content ">
                 <h2 className='text-3xl font-bold text-primary m-2'>Welcome to Your Dashboard</h2>
                 <Outlet></Outlet>
-                {/* <!-- Page content here --> */}
+
 
 
             </div>

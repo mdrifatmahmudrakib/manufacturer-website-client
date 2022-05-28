@@ -10,7 +10,7 @@ const DeleteProduct = ({ product, refetch }) => {
         console.log(id);
         const proceed = window.confirm('Are you Sure?');
         if (proceed) {
-            const url = `http://localhost:5000/product/${id}`;
+            const url = `https://mighty-beach-10745.herokuapp.com/product/${id}`;
             console.log(url)
             fetch(url, {
                 method: 'DELETE',

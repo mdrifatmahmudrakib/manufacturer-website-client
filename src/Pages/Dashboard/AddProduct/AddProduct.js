@@ -6,7 +6,7 @@ const AddProduct = () => {
 
     const onSubmit = data => {
         console.log(data);
-        const url = `http://localhost:5000/addproduct`;
+        const url = `https://mighty-beach-10745.herokuapp.com/addproduct`;
         fetch(url, {
             method: 'POST',
             headers: {
