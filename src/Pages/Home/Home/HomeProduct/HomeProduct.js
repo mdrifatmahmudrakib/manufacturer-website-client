@@ -5,7 +5,7 @@ import ShowProduct from '../../../ShowProduct/ShowProduct';
 const HomeProduct = () => {
     const [products] = AllProductData();
     return (
-        <div className="px-12">
+        <div className='py-12 px-12'>
             <div>
                 <h3 className='m-10 text-primary text-center text-4xl font-bold'>Best Selling Products
                 </h3>

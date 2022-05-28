@@ -14,16 +14,16 @@ const Users = () => {
         return <Loading></Loading>
     }
     return (
-        <div>
-            <h2 className="text-2xl">All Users: {users.length}</h2>
+        <div className='px-12 mx-auto'>
+            <h2 className="text-2xl m-2">All Users: {users.length}</h2>
             <div class="overflow-x-auto">
                 <table class="table w-full">
                     <thead>
                         <tr>
-                            <th></th>
-                            <th>Name</th>
-                            <th>Job</th>
-                            <th>Favorite Color</th>
+
+                            <th>Users Email</th>
+                            <th>Role</th>
+
                         </tr>
                     </thead>
                     <tbody>
