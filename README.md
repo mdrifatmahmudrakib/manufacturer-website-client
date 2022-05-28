@@ -1,6 +1,12 @@
-# Manufacturer Website
+# MF Gimbal
 
-This Website is about Manufacturer Website for Gimbal where people can see the latest Gimbal in based on stocks. Here Have Login And SignUp System . Here also have Admin Option a Admin can give another user admin.An Admin can Delete A Product . Also here have My Portfolio Page Which is Available For Everyone.
+This Website is about Manufacturer Website for Gimbal 
+
+## Features and Functionality
+
+* Here have Login And Signup System
+* Here Have Admin option Who can Manage Some Specific Pages such as Manage Products , Make Another User Admin , Add Products
+* Users Can Only See My Profile , My Order and Add Review
 
 
 ## Technology Used
@@ -20,12 +26,12 @@ This Website is about Manufacturer Website for Gimbal where people can see the l
 
 ### `Client Side Code`
 
- [https://github.com/ProgrammingHeroWC4/warehouse-management-client-side-mdrifatmahmudrakib](https://github.com/ProgrammingHeroWC4/warehouse-management-client-side-mdrifatmahmudrakib)
+ [https://github.com/programming-hero-web-course1/manufacturer-website-client-side-mdrifatmahmudrakib](https://github.com/programming-hero-web-course1/manufacturer-website-client-side-mdrifatmahmudrakib)
 
 
 ### `Server Side Code`
 
- [https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-mdrifatmahmudrakib](https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-mdrifatmahmudrakib)
+ [https://github.com/programming-hero-web-course1/manufacturer-website-server-side-mdrifatmahmudrakib](https://github.com/programming-hero-web-course1/manufacturer-website-server-side-mdrifatmahmudrakib)
 
 
 
