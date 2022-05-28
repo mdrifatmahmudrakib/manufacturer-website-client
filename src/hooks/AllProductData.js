@@ -6,7 +6,7 @@ const AllProductData = () => {
         fetch('http://localhost:5000/product')
             .then(res => res.json())
             .then(data => setproducts(data))
-    }, [])
+    }, [products, setproducts])
     return [products, setproducts]
 
 };

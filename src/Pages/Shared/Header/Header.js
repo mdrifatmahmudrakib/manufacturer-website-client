@@ -16,7 +16,7 @@ const Header = () => {
         <li><Link to="/purchase">Purchase</Link></li>
 
         <li><Link to="/blog">Blogs</Link></li>
-        <li><Link to="/MyPortfolio">My Portfolio</Link></li>
+        <li><Link to="/dashboard">My Portfolio</Link></li>
         {
             user && <li><Link to="/dashboard">Dashboard</Link></li>
         }
@@ -80,7 +80,7 @@ const Header = () => {
                             {menuItems}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost normal-case text-xl ">Doctors Portal</a>
+                    <a className="btn btn-ghost normal-case text-xl ">MF Gimba</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal p-0">
