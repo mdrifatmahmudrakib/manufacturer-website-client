@@ -1,11 +1,18 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
-
+import swal from 'sweetalert';
 const AddProduct = () => {
     const { register, handleSubmit } = useForm();
 
     const onSubmit = data => {
         console.log(data);
+        swal({
+            title: "Product Added Successfully!",
+            text: "",
+            icon: "success",
+            button: "Ok!",
+        });
+
         const url = `https://mighty-beach-10745.herokuapp.com/addproduct`;
         fetch(url, {
             method: 'POST',

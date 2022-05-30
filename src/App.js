@@ -23,6 +23,9 @@ import AddNewReview from './Pages/Dashboard/AddNewReview/AddNewReview';
 import Blog from './Pages/Blog/Blog';
 import MyPortfolio from './Pages/MyPortfolio/MyPortfolio';
 import RequireAdmin from './Pages/Login/RequireAdmin/RequireAdmin';
+import SingleProduct from './Pages/SingleProduct/SingleProduct';
+import Payment from './Pages/Payment/Payment';
+import AddANewReview from './Pages/Review/AddANewReview';
 
 
 function App() {
@@ -38,7 +41,22 @@ function App() {
         <Route path="signup" element={<SignUp />} />
 
         <Route path="addreview" element={<AddAReview />}></Route>
+        <Route
+          path="/product/:productId"
+          element={
+            <RequireAuth>
+              <SingleProduct></SingleProduct>
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="/payment/:paymentId"
+          element={
 
+            <Payment></Payment>
+
+          }
+        />
 
 
 
@@ -60,7 +78,10 @@ function App() {
           <Route path="manageproducts" element={<RequireAdmin><ManageProducts></ManageProducts></RequireAdmin>}></Route>
           <Route path="myorders" element={<MyOrders></MyOrders>}></Route>
           {/* <Route path="addreview" element={<AddAReview></AddAReview>}></Route> */}
-          <Route path="addreview" element={<AddNewReview></AddNewReview>}></Route>
+          {/* <Route path="addreview" element={<AddNewReview></AddNewReview>}></Route> */}
+
+          <Route path="addareview" element={<AddANewReview></AddANewReview>} />
+
           <Route path="addproduct" element={<RequireAdmin><AddProduct></AddProduct></RequireAdmin>}></Route>
 
 

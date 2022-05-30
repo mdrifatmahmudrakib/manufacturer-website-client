@@ -25,12 +25,15 @@ const DeleteProduct = ({ product, refetch }) => {
                     console.log(data);
 
                     const remaining = products.filter(product => product._id !== id)
+                    refetch = { refetch }
                     setProduct(remaining);
-                    refetch();
+
                 })
 
         }
     }
+
+
     // const { name, price, quantity, minimum_quantity } =
     //     product;
     return (

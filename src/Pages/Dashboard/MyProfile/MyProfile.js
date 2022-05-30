@@ -9,12 +9,6 @@ const MyProfile = () => {
     const [user, loading, error] = useAuthState(auth);
     const [openModal, setOpenModal] = useState(false);
 
-    // const { data: user, isLoading, refetch } = useQuery('user', () => fetch('https://mighty-beach-10745.herokuapp.com/user', {
-    //     method: 'GET',
-    //     headers: {
-    //         authorization: `Bearer ${localStorage.getItem('accessToken')}`
-    //     }
-    // }).then(res => res.json()));
 
     const { data: dbuser, isLoading, refetch } = useQuery(['user', user?.email], () => fetch(`https://mighty-beach-10745.herokuapp.com/user/${user?.email}`).then(res => res.json()))
 
@@ -33,12 +27,12 @@ const MyProfile = () => {
                 <div className="avatar">
                     <h1 className='text-primary text-2xl text-bold m-4'>My Profile</h1>
                     <div className="w-24 rounded-xl m-4">
-                        <img src={dbuser?.img || "https://api.lorem.space/image/face?hash=64318"} />
+                        <img src={user?.photoURL || "https://api.lorem.space/image/face?hash=64318"} />
                     </div>
                 </div>
                 <form className="flex flex-col sm:max-w-sm md:w-[300px] lg:w-[350px]">
-                    <input type="text" value={user?.displayName} className="input w-full input-bordered " readOnly />
-                    <input type="email" value={user?.email} className="input my-3 w-full input-bordered " readOnly />
+                    <input type="text" disabled value={user?.displayName} className="input w-full input-bordered " readOnly />
+                    <input type="email" disabled value={user?.email} className="input my-3 w-full input-bordered " readOnly />
                     <input type="text" placeholder='Date of birth' name="age" value={dbuser?.birthDay} className="input w-full mb-3 input-bordered" readOnly />
                     <input type="text" placeholder='Your University / College' name="institute" value={dbuser.institutte} className="input w-full input-bordered" readOnly />
                     <textarea name="presentAddress" placeholder="Present Address" className="textarea textarea-bordered my-3" value={dbuser.presentAddress} readOnly></textarea>
